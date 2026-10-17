@@ -3,18 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Premium Services & Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f9; }
-        .card { background: white; padding: 30px; border-radius: 10px; max-width: 400px; margin: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; padding: 10px 20px; color: white; background: #25d366; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+
+        /* Header / Navbar */
+        header { background: #0f172a; color: white; padding: 15px 20px; text-align: center; font-size: 20px; font-weight: bold; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 40px 20px; text-align: center; }
+        .hero h1 { font-size: 28px; margin-bottom: 10px; }
+        .hero p { font-size: 16px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+        /* Main Container */
+        .container { max-width: 800px; margin: -20px auto 30px auto; padding: 0 15px; }
+
+        /* Card Section */
+        .card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 20px; }
+        .card h2 { color: #0f172a; font-size: 20px; margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+
+        /* Service Grid */
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
+        .service-item { background: #f1f5f9; padding: 15px; border-radius: 8px; text-align: center; font-weight: 600; color: #334155; }
+        .service-item i { font-size: 24px; color: #2563eb; margin-bottom: 8px; display: block; }
+
+        /* Action Buttons */
+        .cta-buttons { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+        .btn { flex: 1; min-width: 140px; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center; font-size: 16px; color: white; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-call { background-color: #2563eb; }
+        .btn-whatsapp { background-color: #16a34a; }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; font-size: 14px; color: #64748b; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Welcome to My Website</h1>
-        <p>Contact us for more details!</p>
-        <a href="https://wa.me/919326298552" class="btn">💬 WhatsApp Us</a>
+
+    <header>
+        PREMIUM SERVICES
+    </header>
+
+    <section class="hero">
+        <h1>Professional & Quality Services</h1>
+        <p>Aapke budget aur zaroorat ke hisaab se sabse behtareen service guaranteed.</p>
+    </section>
+
+    <div class="container">
+        
+        <!-- CTA Card -->
+        <div class="card">
+            <h2>Quick Contact / Instant Booking</h2>
+            <p>Kissi bhi inquiry ya details ke liye humse direct connect karein:</p>
+            <div class="cta-buttons">
+                <a href="tel:+919326298552" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="https://wa.me/919326298552?text=Hi,%20mujhe%20service%20ke%20baare%20mein%20jaankari%20chahiye" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Services Card -->
+        <div class="card">
+            <h2>Hamari Key Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-concierge-bell"></i>
+                    Deep Cleaning
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-building"></i>
+                    Office Services
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-home"></i>
+                    Home Maintenance
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    Verified Quality
+                </div>
+            </div>
+        </div>
+
+        <!-- Details Card -->
+        <div class="card">
+            <h2>Address & Working Hours</h2>
+            <p><strong>📍 Location:</strong> Kandivali East, Mumbai, Maharashtra 400101</p>
+            <p style="margin-top: 8px;"><strong>⏰ Timing:</strong> Open 24 Hours / 7 Days Available</p>
+        </div>
+
     </div>
+
+    <footer>
+        &copy; 2026 Premium Services. All rights reserved.
+    </footer>
+
 </body>
 </html>
